@@ -1,13 +1,66 @@
-![diagramatic representation](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/e544a27a-92dc-457a-8a95-370fb7815d35)
-This is a RAG-based LLM model which integrates with multiple PDF documents, enabling dynamic interaction and exploration. Leveraging Google Gen AI Embeddings and FAISS Vector Store, we transform raw document text into semantic vectors, facilitating rapid information retrieval and enhancing search efficiency. Deployed via Streamlit, this intuitive and accessible interface empowers users to effortlessly navigate complex documentation sets, maximizing comprehension and unlocking valuable insights.
+# Data-Science-Decoder-Bot
+## Interactive RAG-based LLM for Multi-PDF Document Analysis
 
-![Homepag](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/00fb12fc-8d61-4e93-8d43-5c7a010d484e)
+## Introduction
 
-![outpupga](https://github.com/shreeharib/RagBased-pdfInteraction-chatbot/assets/107598445/15f811c0-fe1e-49be-875c-8d1869ce989d)
+This project is a Streamlit-based application that allows users to interact with a conversational AI model to answer questions based on the content of multiple PDF files. 
 
-## How to run this?
+## Key Features:
 
-    1. clone the repo to your local system
-    2. get into the working directory using cd -command
-    3. install the requirements correctly as mentioned in the requirements.txt file
-    4. Then go to the terminal and use this command "streamlit run chatpdf1.py" to run the app in your local host.
+* **PDF File Upload:** Upload and analyze multiple PDF documents.
+* **Text Extraction:** Efficiently extract text content from PDFs.
+* **Text Chunking:** Break down extracted text for optimized vector storage.
+* **Vector Store Creation:** Generate embeddings and store them in a FAISS vector store for fast retrieval.
+* **Question Answering:** Ask questions, retrieve relevant text snippets, and receive informative responses.
+
+## Technologies Used
+
+* **Streamlit:** Build interactive web apps in Python.
+* **PyPDF2:** Extract text from PDF documents.
+* **LangChain:** Framework for building LLM applications.
+* **Google Generative AI:** Pre-trained language models for text understanding.
+* **FAISS:** Efficient similarity search library for dense vectors.
+
+## Installation
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/your-username/data-science-decoder-bot.git
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Google API Key:**
+
+   Create a Google Generative AI API key and set the `GOOGLE_API_KEY` environment variable.
+
+4. **Run the App:**
+
+   ```bash
+   streamlit run chatpdf1.py
+   ```
+
+## Usage
+
+1. Upload the data science PDF files using the sidebar uploader.
+2. Click "Submit & Process" to analyze the uploaded PDFs.
+3. Once processing is complete, ask questions in the text input field.
+4. The application will respond based on the analyzed document content.
+
+
+
+## Future Improvements
+
+* Support for additional file formats (Word, Excel, PowerPoint).
+* Enhanced user interface with features like:
+    * View original PDFs.
+    * Highlight relevant text snippets.
+    * Save conversation history.
+* Explore alternative language models or fine-tuning for domain-specific tasks.
+* Implement more advanced question-answering capabilities with follow-up questions and detailed explanations.
+
